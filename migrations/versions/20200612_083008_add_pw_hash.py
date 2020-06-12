@@ -1,8 +1,8 @@
-"""empty message
+"""add pw hash
 
-Revision ID: 4006b579f85f
-Revises: 6f9e030f5027
-Create Date: 2020-06-09 19:59:29.513921
+Revision ID: 874438bbaeda
+Revises: 418fe3ed8966
+Create Date: 2020-06-12 08:30:08.807093
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '4006b579f85f'
-down_revision = '6f9e030f5027'
+revision = '874438bbaeda'
+down_revision = '418fe3ed8966'
 branch_labels = None
 depends_on = None
 
