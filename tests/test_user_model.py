@@ -11,6 +11,8 @@ class UserModelTestCase(unittest.TestCase):
 
     def tearDown(self):
         db.session.remove()
+        Role.query.delete()
+        db.session.commit()
         self.app_context.pop()
 
     def test_password_setter(self):
