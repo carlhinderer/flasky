@@ -1,4 +1,4 @@
-"""empty message
+"""add role columns
 
 Revision ID: bafca55ef8dd
 Revises: 5b219f213c8d

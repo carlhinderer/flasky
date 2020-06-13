@@ -1,4 +1,4 @@
-"""empty message
+"""add user confirmed
 
 Revision ID: 5b219f213c8d
 Revises: f59d01b4e992
