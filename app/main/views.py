@@ -1,9 +1,9 @@
 from datetime import datetime
-from flask import render_template, session, redirect, url_for
-from flask_login import login_required
+from flask import flash, redirect, render_template, session, url_for
+from flask_login import current_user, login_required
 
 from . import main
-from .forms import NameForm
+from .forms import EditProfileForm, NameForm
 from .. import db
 from ..models import User
 
