@@ -3,10 +3,10 @@ from flask import flash, redirect, render_template, session, url_for
 from flask_login import current_user, login_required
 
 from . import main
-from .forms import EditProfileForm, NameForm
+from .forms import EditProfileAdminForm, EditProfileForm, NameForm
 from .. import db
 from ..decorators import admin_required
-from ..models import User
+from ..models import Role, User
 
 @main.route('/', methods=['GET', 'POST'])
 def index():
