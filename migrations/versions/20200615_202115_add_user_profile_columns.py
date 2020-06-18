@@ -1,4 +1,4 @@
-"""empty message
+"""add user profile columns
 
 Revision ID: 3fbc2f518766
 Revises: bafca55ef8dd
