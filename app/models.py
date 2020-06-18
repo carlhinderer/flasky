@@ -1,3 +1,5 @@
+import hashlib
+
 from datetime import datetime
 from flask import current_app, request
 from flask_login import AnonymousUserMixin, UserMixin
