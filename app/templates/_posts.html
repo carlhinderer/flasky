@@ -6,6 +6,7 @@
                 <img class="img-rounded profile-thumbnail" src="{{ post.author.gravatar(size=40) }}">
             </a>
         </div>
+
         <div class="post-content">
             <div class="post-date">{{ moment(post.timestamp).fromNow() }}</div>
 
@@ -27,6 +28,16 @@
                 <a href="{{ url_for('.post', id=post.id) }}">
                     <span class="label label-default">Permalink</span>
                 </a>
+
+                {% if current_user == post.author %}
+                <a href="{{ url_for('.edit', id=post.id) }}">
+                    <span class="label label-primary">Edit</span>
+                </a>
+                {% elif current_user.is_administrator() %}
+                <a href="{{ url_for('.edit', id=post.id) }}">
+                    <span class="label label-danger">Edit [Admin]</span>
+                </a>
+                {% endif %}
             </div>
         </div>
     </li>
