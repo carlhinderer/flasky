@@ -1,5 +1,6 @@
 from datetime import datetime
-from flask import current_app, flash, redirect, render_template, request, session, url_for
+from flask import current_app, flash, make_response, redirect, render_template, \
+    request, session, url_for
 from flask_login import current_user, login_required
 
 from . import main
